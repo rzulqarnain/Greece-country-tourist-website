@@ -11,3 +11,5 @@ Weather Pages no need to to install plugins. "Allow to use flash player to get l
 
 <img width="1669" alt="image" src="https://user-images.githubusercontent.com/56609358/92178045-878b1c00-edf6-11ea-9f27-85e0e0b4133b.png">
 
+
+<img width="1672" alt="image" src="https://user-images.githubusercontent.com/56609358/92178113-af7a7f80-edf6-11ea-9b17-5402e3ef1794.png">
