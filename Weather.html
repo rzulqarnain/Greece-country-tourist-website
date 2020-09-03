@@ -1,0 +1,329 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Weather CIS386</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+
+
+
+<style>
+
+
+
+
+.sky {
+  height: 480px;
+  background: #007fd5;
+  position: relative;
+  overflow: hidden;
+  -webkit-animation: sky_background 50s ease-out infinite;
+  -moz-animation: sky_background 50s ease-out infinite;
+  -o-animation: sky_background 50s ease-out infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0)
+}
+
+
+
+.clouds_one {
+  background: url("http://pngimg.com/uploads/cloud/cloud_PNG24.png");
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 300%;
+  -webkit-animation: cloud_one 50s linear infinite;
+  -moz-animation: cloud_one 50s linear infinite;
+  -o-animation: cloud_one 50s linear infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0)
+}
+
+.clouds_two {
+  background: url("http://montanaflynn.me/lab/css-clouds/images/cloud_two.png");
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 300%;
+  -webkit-animation: cloud_two 75s linear infinite;
+  -moz-animation: cloud_two 75s linear infinite;
+  -o-animation: cloud_two 75s linear infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0)
+}
+
+.clouds_three {
+  background: url("http://montanaflynn.me/lab/css-clouds/images/cloud_three.png");
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 300%;
+  -webkit-animation: cloud_three 100s linear infinite;
+  -moz-animation: cloud_three 100s linear infinite;
+  -o-animation: cloud_three 100s linear infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0)
+}
+
+@-webkit-keyframes sky_background {
+  0% {
+    background: #007fd5;
+    color: #007fd5
+  }
+  50% {
+    background: #000;
+    color: #a3d9ff
+  }
+  100% {
+    background: #007fd5;
+    color: #007fd5
+  }
+}
+
+@-webkit-keyframes moon {
+  0% {
+    opacity: 0;
+    left: -200% -moz-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    -moz-transform: scale(1);
+    left: 0% bottom: 250px;
+    -webkit-transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    bottom: 500px;
+    -moz-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+  }
+}
+
+@-webkit-keyframes cloud_one {
+  0% {
+    left: 0
+  }
+  100% {
+    left: -200%
+  }
+}
+
+@-webkit-keyframes cloud_two {
+  0% {
+    left: 0
+  }
+  100% {
+    left: -200%
+  }
+}
+
+@-webkit-keyframes cloud_three {
+  0% {
+    left: 0
+  }
+  100% {
+    left: -200%
+  }
+}
+
+@-moz-keyframes sky_background {
+  0% {
+    background: #007fd5;
+    color: #007fd5
+  }
+  50% {
+    background: #000;
+    color: #a3d9ff
+  }
+  100% {
+    background: #007fd5;
+    color: #007fd5
+  }
+}
+
+@-moz-keyframes moon {
+  0% {
+    opacity: 0;
+    left: -200% -moz-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    -moz-transform: scale(1);
+    left: 0% bottom: 250px;
+    -webkit-transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    bottom: 500px;
+    -moz-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+  }
+}
+
+@-moz-keyframes cloud_one {
+  0% {
+    left: 0
+  }
+  100% {
+    left: -200%
+  }
+}
+
+@-moz-keyframes cloud_two {
+  0% {
+    left: 0
+  }
+  100% {
+    left: -200%
+  }
+}
+
+@-moz-keyframes cloud_three {
+  0% {
+    left: 0
+  }
+  100% {
+    left: -200%
+  }
+}
+</style>
+
+
+
+<div class="sky">
+    <div class="moon"></div>
+
+
+<div class="clouds_two"></div>
+<div class="clouds_one"></div>
+<div class="clouds_three"></div>
+
+
+	<div id="header">
+		<div class="clearfix">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.png" alt="LOGO" height="62" width="300"></a>
+			</div>
+			<ul class="navigation">
+				<li class="active">
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="CIVILISATION.html">Civilisation</a>
+				</li>
+                <li>
+					<a href="contact.html">Contact</a>
+				</li>
+				<li>
+					<a href="history.html">history</a>
+				</li>
+				<li>
+					<a href="Famous people.html"> Famous people </a>
+				</li>
+
+				<li>
+					<a href="Weather.html">Weather</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+
+<div style="float:left; padding-top: 225px; padding-left: 200px;" class="detail">
+					<iframe scrolling="no" frameborder="0" allowtransparency="true" src="http://www.weather.gr/en/widgets/weather_w7.aspx?p=3" style="width: 356px; height: 112px"></iframe><a target="blank" style="color: #999999; width: 356px; display: block; text-align: center; font: 10px/10px Arial,san-serif; text-decoration: none;" href="http://www.weather.gr">Prepared by Zed</a>
+				</div>
+
+
+<h1 style="color:red; float:left; padding-top: 290px; padding-left: 500px;">Weather Update</h1>
+
+
+</div>
+
+	<div id="contents">
+		<div class="clearfix">
+			<div class="sidebar">
+				<div>
+
+
+					<h2>Weather by Map</h2>
+					<ul class="contact">
+						<li>
+
+
+                        <iframe style="width:280px; height:300px;" scrolling="no" frameborder="0" allowtransparency="true" src="http://www.weather.gr/en/widgets/weather_w8.aspx" style="width: 300px; height: 267px">
+                        </iframe>
+                        <a target="blank" style="color: #999999; width: 300px; display: block; text-align: center; font: 				10px/10px Arial,san-serif; text-decoration: none;" href="http://www.weather.gr">Prepared by Zed</a>
+
+
+
+					</ul>
+				</div>
+			</div>
+			<div class="main">
+				<h1>Greece Weather</h1>
+				<h2>AVERAGE MONTHLY WEATHER IN ATHENS, GREECE</h2><br />
+				<p>
+					May till June and September till October is an ideal time to visit Athens. The weather is perfect, still warm, but not unbearably hot. The children are in school so its quieter. The historical sites are less crowded as well cause most tourists have gone to work again. There is also still nightlife around, especially at weekends.
+				</p>
+<p>
+What's the best time to travel to Athens in Greece? Here are some annual weather facts we collected from our historical weather data: <br /><br />
+
+	1.The months May, June, September and October have nice weather with a good average temperature.<br />
+	2.Hot season / summer is in June, July, August and September.<br />
+	3.Athens has dry periods in April, May, June, July, August and September.<br />
+	4.On average, the warmest month is July.<br />
+	5.On average, the coolest month is January.<br />
+	6. December is the wettest month. This month should be 	avoided if you don't like too much rain.<br />
+	7.July is the driest month.<br />
+</p>
+
+			</div>
+
+	</div>
+	<div id="footer">
+		<div class="clearfix">
+
+			<div class="section contact">
+				<h4>Contact Us</h4>
+				<p>
+					<span>Address:</span> University of the Fraser Valley
+3384 King Rd, Abbotsford, BC V2S7M8
+				</p>
+				<p>
+					<span>Phone:</span> (+604) 504 7441
+				</p>
+				<p>
+					<span>Email:</span> 300141538@student.ufv.ca
+				</p>
+			</div>
+			<div class="section">
+				<h4>SEND US A MESSAGE</h4>
+				<p>
+					If you have any problem to access our web site please send us a quick message our team would be happy to assist you.
+				</p>
+				<a href="contact.html" class="subscribe">Click to send us an email</a>
+			</div>
+		</div>
+		<div id="footnote">
+			<div class="clearfix">
+
+				<p>
+					© Copyright 2019 CIS386. All Rights Reserved.
+				</p>
+			</div>
+		</div>
+</div>
+	</div>
+</body>
+</html>
